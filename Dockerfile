@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     
 # Install OpenJDK-18
 RUN apt-get update && \
-    apt-get install -y openjdk-9-jdk
+    apt-get install openjdk-11-jdk -y
     
  
 RUN pip3 install python-terrier && pip3 install pyautocorpus
