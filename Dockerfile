@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git-lfs \
     vim \
     software-properties-common \
-    locales
+    locales \
+    python3-pip
 RUN pip install python-terrier && pip install -q git+https://github.com/terrierteam/pyterrier_colbert.git && pip install faiss-gpu && pip install pyautocorpus
 
 
