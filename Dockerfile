@@ -15,6 +15,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     software-properties-common \
     locales \
     python3-pip
+    
+# Install OpenJDK-18
+RUN apt-get update && \
+    apt-get install -y openjdk-18-jdk
+    
+ 
 RUN pip3 install python-terrier && pip3 install pyautocorpus
 
 
