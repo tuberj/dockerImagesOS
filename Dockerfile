@@ -1,6 +1,6 @@
 FROM nvidia/cuda:11.2.0-cudnn8-runtime-ubuntu20.04
 
-RUN apt-get update && DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata && apt-get install python3
+RUN apt-get update && DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata && apt-get install python3 && apt-get install pip
 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
