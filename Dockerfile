@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     software-properties-common \
     locales \
     python3-pip
-RUN pip install python-terrier && pip install -q git+https://github.com/terrierteam/pyterrier_colbert.git && pip install faiss-gpu && pip install pyautocorpus
+RUN pip3 install python-terrier && pip3 install pyautocorpus
 
 
 # RUN pip3 install -U pip setuptools wheel && pip3 install jupyter -U && pip3 install jupyterlab
