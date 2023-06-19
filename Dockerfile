@@ -25,6 +25,7 @@ RUN apt-get update && \
 RUN pip3 install bertopic
 RUN pip3 install numpy==1.23
 RUN pip3 install pandas==1.5.3
+RUN pip3 install faiss-gpu==1.6.3 --no-cache
  
 RUN pip3 install python-terrier && pip3 install pyautocorpus && pip3 install pyterrier_pisa && pip3 install json-stream && pip3 install --upgrade git+https://github.com/terrierteam/pyterrier_adaptive.git
 #RUN pip3 install torchvision 
