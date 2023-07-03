@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.2.0-cudnn8-runtime-ubuntu20.04
+FROM nvidia/cuda:11.2.2-cudnn8-runtime-ubuntu20.04
 
 RUN apt-get update && DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 
