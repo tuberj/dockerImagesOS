@@ -34,6 +34,7 @@ RUN pip3 install python-terrier && pip3 install pyautocorpus && pip3 install pyt
 #RUN pip3 install torchvision 
 
 RUN pip3 install --upgrade git+https://github.com/terrierteam/pyterrier_doc2query.git && pip3 install git+https://github.com/terrierteam/pyterrier_dr 
+Run pip3 install --upgrade git+https://github.com/terrierteam/pyterrier_t5.git
 
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
 RUN export JAVA_HOM
